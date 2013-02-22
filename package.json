@@ -2,5 +2,5 @@
   "name": "touchstone",
   "version": "0.0.0",
   "description": "javascript sdk and nodejs server for reporting test results in virtualized environments",
-  "author": "Lee Treveil",
+  "author": "Lee Treveil"
 }

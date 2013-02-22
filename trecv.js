@@ -3,7 +3,7 @@ var url  = require('url');
 var util = require('util');
 
 var HOST = '127.0.0.1';
-var PORT = 1337;
+var PORT = 1942;
 
 var expected = parseInt(process.argv[2]) || 1;
 var results = {};

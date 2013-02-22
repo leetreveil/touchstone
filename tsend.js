@@ -20,7 +20,7 @@ function chunkString (str, len) {
 var id = generateShortUUID();
 
 function submit (params) {
-    var prefix = 'http://localhost:1337/send.gif?id=' + encodeURIComponent(id);
+    var prefix = 'http://localhost:1942/send.gif?id=' + encodeURIComponent(id);
     var payload = JSON.stringify(params);
     var url = prefix + '&d=' + payload;
     var splits = chunkString(payload, 500);

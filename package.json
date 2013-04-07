@@ -3,6 +3,7 @@
   "version": "0.0.2",
   "description": "javascript sdk and nodejs server for reporting test results in virtualized environments",
   "author": "Lee Treveil",
+  "main": "lib/trecv.js",
   "devDependencies": {
     "tap": "~0.3.3"
   },

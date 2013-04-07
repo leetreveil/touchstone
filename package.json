@@ -11,7 +11,7 @@
     "tap": "~0.3.3"
   },
   "scripts": {
-    "test": "tap ./test"
+    "test": "node test/test-server.js && node test/test-tap.js"
   },
   "dependencies": {
     "commander": "~1.1.1",

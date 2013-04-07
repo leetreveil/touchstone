@@ -1,6 +1,16 @@
 {
   "name": "touchstone",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "javascript sdk and nodejs server for reporting test results in virtualized environments",
-  "author": "Lee Treveil"
+  "author": "Lee Treveil",
+  "devDependencies": {
+    "tap": "~0.3.3"
+  },
+  "scripts": {
+    "test": "tap ./test"
+  },
+  "dependencies": {
+    "commander": "~1.1.1",
+    "qunitjs": "~1.11.0"
+  }
 }

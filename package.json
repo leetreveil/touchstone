@@ -4,6 +4,9 @@
   "description": "javascript sdk and nodejs server for reporting test results in virtualized environments",
   "author": "Lee Treveil",
   "main": "lib/trecv.js",
+  "bin": {
+    "touchstone": "bin/cli.js"
+  },
   "devDependencies": {
     "tap": "~0.3.3"
   },

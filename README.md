@@ -2,7 +2,7 @@
 
 Touchstone
 ------------
-Touchstone is a nodejs server and javascript client for collecting test results from browsers in virtualized environments. See xxx for browserstack support.
+Touchstone is a nodejs server and javascript client for collecting test results from browsers in virtualized environments.
 
 ```
 npm install touchstone
@@ -15,7 +15,7 @@ CLI
 Touchstone comes with a CLI to collect the test results. The CLI process exits when the test results have been collected from the browser.
 
 ```
-cli.js [options]
+touchstone [options]
 
   Options:
 
@@ -29,7 +29,7 @@ cli.js [options]
 
 API
 -----------------
-The API returns a node http server which you can use to integrate with your own programs. The server objct emits test results collected from the browser.
+The API returns a node http server which you can use to integrate with your own programs. The server object emits test results collected from the browser.
 
 ```javascript
   var touchstone = require('touchstone');
@@ -42,9 +42,7 @@ The API returns a node http server which you can use to integrate with your own 
 
 Support
 -----------------
-Touchstone works in every browser since ie6. :)
-
-There is support for the qunit and jasmine test frameworks. Let me know if you want another adding or send a pull request!
+Supports the qunit and jasmine test frameworks. Let me know if you want another adding or send a pull request!
 
 Licence
 -----------------

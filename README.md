@@ -29,11 +29,14 @@ cli.js [options]
 
 API
 -----------------
-The API returns a node http server which you can use to integrate with your own programs.
+The API returns a node http server which you can use to integrate with your own programs. The server objct emits test results collected from the browser.
 
 ```javascript
   var touchstone = require('touchstone');
   var server = touchstone.createServer().listen(1337, 'localhost');
+
+  server.on('result', function (id, result) {
+  });
 ```
 
 
@@ -41,7 +44,7 @@ Support
 -----------------
 Touchstone works in every browser since ie6. :)
 
-There is support for the qunit and jasmine test frameworks. Let me know if you want another adding or send a pull request!.
+There is support for the qunit and jasmine test frameworks. Let me know if you want another adding or send a pull request!
 
 Licence
 -----------------

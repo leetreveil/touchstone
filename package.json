@@ -1,7 +1,7 @@
 {
   "name": "touchstone",
   "version": "0.0.2",
-  "description": "javascript sdk and nodejs server for reporting test results in virtualized environments",
+  "description": "Touchstone is a nodejs server and javascript client for collecting test results from browsers in virtualized environments.",
   "author": "Lee Treveil",
   "main": "lib/trecv.js",
   "bin": {

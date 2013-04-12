@@ -42,7 +42,7 @@ The API returns a node http server which you can use to integrate with your own 
 
 Support
 -----------------
-Supports the qunit and jasmine test frameworks. Let me know if you want another adding or send a pull request!
+Supports the qunit and jasmine test frameworks. If your framework isn't there create an issue or send a pull request!
 
 Licence
 -----------------

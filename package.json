@@ -11,10 +11,11 @@
     "tap": "~0.3.3"
   },
   "scripts": {
-    "test": "node test/test-server.js && node test/test-tap.js"
+    "test": "node test/test-server.js"
   },
   "dependencies": {
     "commander": "~1.1.1",
-    "qunitjs": "~1.11.0"
+    "qunitjs": "~1.11.0",
+    "tap-test-converter": "0.0.0"
   }
 }

@@ -2,7 +2,7 @@
 var program = require('commander');
 var trecv = require('../lib/trecv');
 var pkg = require('../package');
-var tapOut = require('../lib/tap');
+var tapConv = require('tap-test-converter');
 
 program
     .version(pkg.version)
@@ -20,7 +20,7 @@ server.on('result', function (id, result) {
     if (program.json) {
         console.log(require('util').inspect(result, { showHidden: false, depth: null }));
     } else {
-        console.log(tapOut(result));
+        console.log(tapConv(result));
     } 
     process.exit(result['failed'] !== 0);
 });

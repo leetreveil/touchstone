@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+var util = require('util');
 var program = require('commander');
 var trecv = require('../lib/trecv');
 var pkg = require('../package');
@@ -17,7 +18,7 @@ program.host = program.host || 'localhost';
 trecv.createServer()
     .on('result', function (id, result) {
         if (program.json) {
-            console.log(require('util').inspect(result, { showHidden: false, depth: null }));
+            console.log(util.inspect(result, { showHidden: false, depth: null }));
         } else {
             console.log(tapConv(result));
         }

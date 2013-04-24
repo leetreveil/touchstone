@@ -14,13 +14,13 @@ program
 program.port = program.port || 1942;
 program.host = program.host || 'localhost';
 
-var server = trecv.createServer().listen(program.port, program.host);
-
-server.on('result', function (id, result) {
-    if (program.json) {
-        console.log(require('util').inspect(result, { showHidden: false, depth: null }));
-    } else {
-        console.log(tapConv(result));
-    } 
-    process.exit(result['failed'] !== 0);
-});
+trecv.createServer()
+    .on('result', function (id, result) {
+        if (program.json) {
+            console.log(require('util').inspect(result, { showHidden: false, depth: null }));
+        } else {
+            console.log(tapConv(result));
+        }
+        process.exit(result['failed'] !== 0);
+    })
+    .listen(program.port, program.host);

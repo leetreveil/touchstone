@@ -19,9 +19,10 @@ touchstone
 
 Instrument your javascript test suite with the script provided by touchstone:
 
-```javascript
- <script src='http://localhost:1942/tsend.js'></script>
+```html
+<script src='http://localhost:1942/tsend.js'></script>
 ```
+
 
 This script will automatically hook into your test suite and send the test results back to the server. (Supports qunit and jasmine out of the box)
 

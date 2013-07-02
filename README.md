@@ -64,10 +64,11 @@ The API returns a node http server which you can use to integrate with your own 
 
 ```javascript
 var touchstone = require('touchstone');
-touchstone.createServer().listen(1337, 'localhost')
+touchstone.createServer()
   .on('result', function (id, result) {
     console.log(result);
-  });
+  })
+  .listen(1337, 'localhost');
 ```
 
 

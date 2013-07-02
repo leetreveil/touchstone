@@ -2,23 +2,19 @@
 <html>
 <head>
     <title>touchstone</title>
-    <link rel='stylesheet' href='node_modules/qunitjs/qunit/qunit.css'>
+    <link rel='stylesheet' href='http://code.jquery.com/qunit/qunit-1.12.0.css'>
     <meta http-equiv="X-UA-Compatible" content="IE=EDGE"/>
 </head>
 <body>
+    Run the touchstone CLI and refresh this page to see the test
+    results being collected in the CLI!
     <div id='qunit'></div>
-
-    <script src='node_modules/qunitjs/qunit/qunit.js'></script>
+    <script src='http://code.jquery.com/qunit/qunit-1.12.0.js'></script>
     <script src='http://localhost:1942/tsend.js'></script>
-
     <script type='text/javascript'>
 
         test('abc', function () {
             equal(true, true);
-        });
-
-        test('ffa', function () {
-            equal(false, true);
         });
 
     </script>

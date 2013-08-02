@@ -4,6 +4,7 @@ var program = require('commander');
 var trecv = require('../lib/trecv');
 var pkg = require('../package');
 var tapConv = require('tap-test-converter');
+var fmt = require('util').format;
 
 program
     .version(pkg.version)
@@ -24,4 +25,6 @@ trecv.createServer()
         }
         process.exit(result['failed'] !== 0);
     })
-    .listen(program.port, program.host);
+    .listen(program.port, program.host, function () {
+        console.log(fmt('listening on %s:%d', program.host, program.port));
+    });

@@ -65,6 +65,7 @@ The API returns a node http server which you can use to integrate with your own 
 
 ```javascript
 var touchstone = require('touchstone');
+
 touchstone.createServer()
   .on('result', function (id, result) {
     console.log(result);

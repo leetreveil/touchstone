@@ -16,6 +16,8 @@
   "dependencies": {
     "commander": "~1.1.1",
     "qunitjs": "~1.11.0",
-    "tap-test-converter": "0.0.0"
+    "tap-test-converter": "0.0.0",
+    "combined-stream": "0.0.4",
+    "through": "~2.3.4"
   }
 }
